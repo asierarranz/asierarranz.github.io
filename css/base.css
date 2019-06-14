@@ -41,25 +41,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block; 
 }
 body {
-	line-height: 1;
+	line-height: 1; 
 }
 ol, ul {
-	list-style: none;
+	list-style: none; 
 }
 blockquote, q {
-	quotes: none;
+	quotes: none; 
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
+	content: none; 
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 0; 
 }
 
 
@@ -78,7 +78,7 @@ body {
 body.under-construction {
 	border-top:0;
 }
-
+ 
 .clear {
 	clear: both;
 	display: block;
@@ -113,15 +113,15 @@ span.line {
 /* Main Fonts
 ================================================== */
 body, .navigation ul li a, .navigation ul li ul li a, .subscribe input.mail, .subscribe input.submit, input.search, input.text, textarea, input.subscribe-text, input.subscribe-button {
-	font-family: 'IBM Plex Sans', Arial, sans-serif;
+	font-family: 'TitilliumText22LMedium', Arial, sans-serif;
 }
 
 .welcome, .js .selectnav, .testimonials .author, .qoute, .description, h1.page-title, blockquote, .info-box p, table th, .tables-column .header h3, .comment .title span.right, .ei-title h3, #under-construction p, #clock-ticker .block .flip-top {
-	font-family: 'IBM Plex Sans', Arial, sans-serif;
+	font-family: 'TitilliumText22LRegular', Arial, sans-serif;
 }
 
 .recent-work .item h4, .day, .qoute h2, .progress-bar h5, .choose ul li, .button, .lightbox .item h4, .tables-column .header h1, .portfolio .item h4, .comment .title, .form-box label{
-	font-family: 'IBM Plex Sans', Arial, sans-serif;
+	font-family: 'TitilliumText22LBold', Arial, sans-serif;
 }
 
 .recent-blog .tags, .recent-blog .tags-comments, .tags-comments2, .subscribe input.mail, span.copyright, ul.team  li p, .most-posts li span, .post-meta, .comment .title span.right {
@@ -192,8 +192,6 @@ body, .post-meta a {
 
 .month, .subscribe input.submit, .sti-menu li a:hover h2, .sti-menu li a:hover p, a.link, a.link:hover, #accordion h3.ui-state-active a, #accordion h3.ui-state-active a:hover, #accordion h3.ui-state-active:hover a, .button, .button:hover, .highlight-color, .highlight-color a,.highlight-color a:hover, .highlight-black, .highlight-black a, .highlight-black a:hover, .highlight-gray, .highlight-gray a, .highlight-gray a:hover, #horizontal-tabs ul.tabs li.current, #horizontal-tabs ul.tabs li:hover, #vertical-tabs ul.tabs li.current, #vertical-tabs ul.tabs li:hover, #toggle-view li h3.black, #toggle-view li h3.color, #toggle-view li h3.gray, #toggle-view li span.link, .dropcap.color, .dropcap.black, .pagination li a.current, .pagination li a:hover, .pagination li a.prev, .pagination li a.next, .tabscontent.color, .tables-column .header h1, .tables-column .header h3, .tables-column .footer h3 span, #options li a:hover, #options li a.selected, .popular-tags a:hover, .date-post .day, .date-post .month, #under-construction, #under-construction h1, #under-construction p, input.subscribe-button, .flex-caption span {
 	color:#fff;
-	font-weight: 300;
-	font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .recent-blog .tags-comments a, .tags-comments2 a, .recent-blog .tags-comments, .tags-comments2, .more a, .more2 a {
@@ -201,7 +199,7 @@ body, .post-meta a {
 }
 
 .navigation ul li a, .sti-menu li a h2, .comment a:hover, .form-box label{
-	color:#fff;
+	color:#585858;
 }
 
 h1, h2, h3, h4, h5, h6, .services .item a, .services .item.active:hover a, .day, .qoute h2, .welcome p, .js .selectnav, .description p, .use p, .progress-bar h5, #horizontal-tabs ul.tabs li, #vertical-tabs ul.tabs li, .square-list li, .square-list li a, .check-list li, .check-list li a, .plus-list li, .plus-list li a, .arrow-list li, .arrow-list li a, .cross-list li, .cross-list li a, .star-list li, .star-list li a, .minus-list li, .minus-list li a, .arrow2-list li, .arrow2-list li a, .circle-list li, .circle-list li a, table th, #options li a, .most-posts li a:hover, #clock-ticker .block, .tweet_list li a:hover, .under-construction .copyright a:hover {
@@ -229,9 +227,9 @@ footer, .subscribe input.mail {
 	color:#999999;
 }
 
-.navigation ul li a:hover, .navigation ul li a.selected, .navigation ul li a.active, .navigation ul li ul li a, .services .item,
+.navigation ul li a:hover, .navigation ul li a.selected, .navigation ul li a.active, .navigation ul li ul li a, .services .item, 
 .recent-work .item, .welcome, .qoute, .lightbox .item, .portfolio .item, #options li a, .popular-tags a, .meta {
-	
+	background: #fbfbfb; 
 }
 
 #accordion h3{
@@ -276,7 +274,7 @@ footer, .subscribe input.mail {
 	background:#585858 url(../images/icons/project-slider-arrow-left.png) no-repeat;
 	background-position:45% 50%;
 }
-
+	
 
 .testimonials p, .clients .items, blockquote, .info-box, .box, .description, .use, #horizontal-tabs ul.tabs li, #horizontal-tabs .tabscontent, #vertical-tabs ul.tabs li, #vertical-tabs .tabscontent, .pagination li a, .breadcrumbs.gray, table th, .tables-column .list li.even, #toggle-view li h3.normal {
 	background-color:#fafafa;
@@ -318,7 +316,7 @@ footer.under-construction {
 .flex-control-nav li a, .ei-slider-thumbs li a {
 	background:#eaeaea;
 }
-
+	
 
 
 
@@ -332,7 +330,7 @@ footer.under-construction {
 /* Typography
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-weight: normal; 
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 28px; line-height: 50px; }
@@ -358,15 +356,15 @@ hr.bottom { border: solid #747474; border-width: 1px 0 0; clear: both; margin: 1
 
 /* Links
 ================================================== */
-a, .recent-work .item, .services .item .square, .clients ul.items li img, .subscribe input.submit, ul.team li, ul.team li img, ul.team li h3, .choose ul li, .our-services ul li h3, .icon-box, .square-list li, .check-list li, .plus-list li, .arrow-list li, .cross-list li, .star-list li, .minus-list li, .arrow2-list li, .circle-list li, .lightbox .item, .tables-column .footer h3 span, .thumbs li a, .button  {
-	-webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
+a, .recent-work .item, .services .item .square, .clients ul.items li img, .subscribe input.submit, ul.team li, ul.team li img, ul.team li h3, .choose ul li, .our-services ul li h3, .icon-box, .square-list li, .check-list li, .plus-list li, .arrow-list li, .cross-list li, .star-list li, .minus-list li, .arrow2-list li, .circle-list li, .lightbox .item, .tables-column .footer h3 span, .thumbs li a, .button  { 
+	-webkit-transition: all 0.3s ease-in;  
+    -moz-transition: all 0.3s ease-in;  
+    -ms-transition: all 0.3s ease-in;  
+    -o-transition: all 0.3s ease-in;  
     transition: all 0.3s ease-in;
 }
 
-a {
+a { 
    text-decoration:none;
 	color:#585858;
 }
@@ -377,7 +375,7 @@ a {
 ================================================== */
 img {
 	max-width: 100%;
-	height: auto;
+	height: auto; 
 }
 
 /* Forms
