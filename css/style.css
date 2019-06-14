@@ -53,7 +53,7 @@
 .our-services ul li {
 	margin-bottom:25px;
 }
-	
+
 .icon-box {
 	width:40px;
 	height:24px;
@@ -142,21 +142,22 @@ img.pic-2 {
 
 /* header */
 header {
-	min-height:91px;
-	border-top:5px solid #585858;
+	min-height:61px;
+	background-color: #21252b;
+	max-height: 61px;
+	border-bottom: 1px solid rgb(24, 27, 32);
 }
-
 .logo {
-	margin:28px 0;
+	margin:10px 0;
 }
 
-.selectnav { 
-    display: none; 
+.selectnav {
+    display: none;
 }
 
 /* slider */
 #slider {
-	margin:30px 0;
+	margin:310px 0;
 }
 
 
@@ -169,7 +170,7 @@ header {
 	padding:20px 10%;
 	margin:0 0 30px 0;
 }
-	
+
 .use {
 	padding:10px 2%;
 	margin:0 0 15px 0;
@@ -237,8 +238,8 @@ a.link {
 }
 
 .services .item .square img{
-	 display: block;   
-	 margin-left: auto;   
+	 display: block;
+	 margin-left: auto;
 	 margin-right: auto;
 }
 
@@ -456,7 +457,7 @@ input.submit-search {
 	margin:0 6px 6px 0;
 }
 
-	
+
 
 /* footer */
 footer {
@@ -723,8 +724,8 @@ input.subscribe-button {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 .navigation ul li a {
-display: block;
-padding: 37px 10px 34px 10px;
+	display: block;
+	padding: 5px 10px 5px 10px;
 }
 
 .form {
@@ -853,7 +854,7 @@ input.text, textarea {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-	
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -863,11 +864,11 @@ input.text, textarea {
 	margin:28px 28%;
 }
 
-.js #nav { 
-    display: none; 
+.js #nav {
+    display: none;
 }
 
-.js .selectnav { 
+.js .selectnav {
 	display: block;
 	padding:10px;
 	width:100%;
@@ -875,7 +876,7 @@ input.text, textarea {
 	margin-bottom: 22px;
 	cursor:pointer;
 }
- 
+
 #slider {
     margin-top:20px;
 }
@@ -897,7 +898,7 @@ input.text, textarea {
     bottom:0;
 	line-height:18px;
 }
- 
+
 .flex-caption span {
 	display:block;
 	padding:0 0 3px 0;
@@ -1079,7 +1080,7 @@ input.text, textarea {
 	font-size:27px;
 }
 
-#under-construction p { 
+#under-construction p {
 	line-height:35px;
 	font-size:20px;
 }
@@ -1148,11 +1149,11 @@ input.subscribe-button {
     margin:28px 20%;
 }
 
-.js #nav { 
-    display: none; 
+.js #nav {
+    display: none;
 }
 
-.js .selectnav { 
+.js .selectnav {
 	display: block;
 	padding:10px;
 	width:100%;
@@ -1204,7 +1205,7 @@ input.subscribe-button {
     bottom:0;
 	line-height:15px;
 }
- 
+
 .flex-caption span {
 	display:block;
 	padding:0 0 3px 0;
@@ -1396,7 +1397,7 @@ input.text, textarea {
 	font-size:20px;
 }
 
-#under-construction p { 
+#under-construction p {
 	line-height:35px;
 	font-size:16px;
 }
