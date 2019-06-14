@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- CSS Style -->
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">   
   
   <!-- Color Skins -->
   <link rel="stylesheet" href="css/skins/blue.css" name="skins"> 
@@ -52,6 +52,35 @@
     <script src="js/jflickrfeed.min.js"></script> <!-- jQuery Flickr -->
     <script src="js/twitter-flickr-options.js"></script> <!-- jQuery Tweets Options -->
     <script src="js/styleswitch.js"></script> <!-- Style Switcher -->
+    
+    <!-- Contact Form Js -->
+    
+    <script type="text/javascript">                                 
+	// contact form js
+	jQuery(document).ready(function($) {
+	$("#ajax-contact-form").submit(function() {
+	var str = $(this).serialize();
+	$.ajax({
+	  type: "POST",
+	  url: "includes/contact-process.php",
+	  data: str,
+	  success: function(msg) {
+	  // Message Sent? Show the 'Thank You' message and hide the form
+	  if(msg == 'OK') {
+		  result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+		  $("#fields").hide();
+	  } else {
+		  result = msg;
+	  }
+	  $('#note').html(result);
+    }
+	});
+	return false;
+	});
+	});
+    </script>  
+    
+    <!-- End Contact -->
   
   <!-- End JavaScript -->
 
@@ -107,7 +136,7 @@
                 <li><a href="full_width.html">Full Width</a></li>
               </ul>
             </li>
-            <li><a href="#2" class="active">Features</a>
+            <li><a href="#2">Features</a>
               <ul>
                 <li><a href="shortcodes.html">Shortcodes</a></li>
                 <li><a href="icons.html">Icons</a></li>
@@ -139,9 +168,11 @@
                 <li><a href="single_post.html">Single Post</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
-
+          
+          
+          
         </nav>
       </div><!-- End Menu -->
       
@@ -152,23 +183,123 @@
   
   <div class="container clearfix">
   
-    <div class="sixteen columns bottom">
-    <h1 class="page-title">404 / <span class="gray2">Page Not Found</span><span class="line"></span></h1> </div>    <!-- Page Title -->
-  
-    <div id="description">
+   <div class="sixteen columns"> <h1 class="page-title">Contact Us<span class="line"></span></h1>
+   </div><!-- Page Title -->
+   
+   
+   <div id="description">
       <div class="sixteen columns">
-        <div class="description bottom">
-        <h1 class="big">404</h1>
-        <p class="bottom-2">
-         The page you are looking for doesn't seem to exist.
+        <div class="description top-3 bottom-2">
+        <p>
+          Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cum sociis.
         </p>
-        <a href="index.html" class="button medium black">Back To Home</a> 
-        <a href="sitemap.html" class="button medium black">Go to Sitemap</a>
         </div>
       </div>
     </div><!-- End description -->
-  
-    
+   
+   
+   <div class="sixteen columns"> <h2 class="title">Our Location<span class="line"></span></h2></div>
+   
+   <!-- google map -->
+   
+   <div class="sixteen columns google-map top-2">
+   
+  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Tanta,+Egypt&amp;daddr=&amp;hl=en&amp;geocode=Fc3D1QEdOAfZASk18PyqXcn3FDFCroxeDIIhdA&amp;sll=30.786509,31.000376&amp;sspn=0.001307,0.002642&amp;doflg=ptk&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=30.786509,31.000376&amp;spn=0.001307,0.002642&amp;output=embed"></iframe>
+   
+   </div>
+   
+   <!-- End -->
+   
+   
+   <!-- Start Contact Form -->
+   <div class="eleven columns  bottom">    
+      
+      <h2 class="title">Keep in Touch<span class="line"></span></h4>
+      
+      <div class="form">
+      
+      <div id="note"></div><!-- End notification -->
+      
+      <div id="fields">
+      
+      <form id="ajax-contact-form" action="">
+      
+      <div class="form-box">
+        <label>Name <small>(required)</small></label>
+        <input type="text" name="name" class="text">
+      </div><!-- End Box -->
+      
+      <div class="form-box">
+        <label>Email <small>(required)</small></label>
+        <input type="text" name="email" class="text">
+      </div><!-- End Box -->
+      
+      <div class="form-box last">
+        <label>Subject </label>
+        <input type="text" name="subject" class="text">
+      </div><!-- End Box -->
+      
+      <div class="form-box big">
+        <label>Message <small>(required)</small> </label>
+        <textarea name="message"></textarea>
+      </div><!-- End Box -->
+      
+      <div class="clearfix"></div>
+      
+      <input type="submit" name="submit" value="Send Message" class="button medium color" />
+      
+      </form>
+      
+      </div><!-- End fields -->
+      
+      </div>
+      
+      <!-- End contact form -->
+      
+   </div><!-- End column -->  
+   
+   
+   <!-- Start Sidebar Widgets -->
+   <div class="five columns bottom">
+   
+     <!-- Contact Details -->
+     <h2 class="title bottom-2">Contact Details<span class="line"></span></h2>
+     
+       <ul class="details top-3 bottom-2">
+         <li><span class="google_maps icon black"></span><p>30 Tanta City, EGYpT</p></li>
+         <li><span class="phone icon black"></span><p>(002) 560-655-995</p></li>
+         <li><span class="e-mail icon black"></span><p><a href="#"><span class="color">info@website.com</span></a></p></li>
+         <li><span class="globe icon black"></span><p><a href="#"><span class="color">www.website.com</span></a></p></li>
+       </ul>
+      
+      <div class="clearfix"></div>
+     
+      <!-- Contact Details -->
+     <h2 class="title bottom-2">Socail Contact<span class="line"></span></h2>
+     
+       <ul class="followers">
+        <li>
+        <a href="#" data="facbook" class="black colorTipContainer"><span class="social-icon facbook color"></span></a>
+        </li>
+        <li>
+        <a href="#" data="twitter" class="black colorTipContainer"><span class="social-icon twitter color"></span></a>
+        </li>
+        <li>
+        <a href="#" data="google+" class="black colorTipContainer"><span class="social-icon google_plus  color"></span></a>
+        </li>
+        <li>
+        <a href="#" data="Rss" class="black colorTipContainer"><span class="social-icon rss color"></span></a> 
+        </li>
+        </ul>
+   
+   </div><!-- End Sidebar Widgets -->
+   
+   
+   <div class="clearfix"></div>
+   
+   
+   
+       
      
   </div><!-- <<< End Container >>> -->
   
